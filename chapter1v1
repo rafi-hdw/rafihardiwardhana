@@ -1,51 +1,47 @@
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
     $ quick_menu = True
     stop music fadeout 3.0
     scene black with Dissolve (3.0)
     scene nightsky with Dissolve (1.5)
 
-    # python:
-    #     import time
-    #     waktu = time.localtime()
-
     $ playername = renpy.input ("Enter your name!", default="Jovy")
 
     scene black with Dissolve (2.0)
-    # window show
     scene room with Dissolve (2.0)
-    p "Gh..."
+    p "Urgh..."
 
     play sound book_close
     play sound thud_02
-    p "Ah!!!" with vpunch
+    p "Ahhhh!" with vpunch
 
 
     p "Grrr..."
-    p "Goddammit!" with vpunch
-    p "The boxes fell again..."
+    p "Dammit!" with vpunch
+    p "These boxes fell off again..."
 
     play music comedy_2 fadein 2.0
     show room blur behind mc
-    #show mc neutral at bottom_center
+    show mc neutral with dis02
     with dis02
     p "..."
 
     #show mc sad
     p "*Sigh*"
+    "I'm currently packing up my stuffs and getting ready to move out from here."
+    "A few months ago I landed a scholarship on a university out of town."
+    "Judging from my family's economic situation..."
+    "If I don't take the scholarship... I can say goodbye to college forever."
+    "I should be excited, hyped and all that..."
+    "Because the moment I set my foot in the new town..."
+    "It'll be a new chapter in my life!"
+    "But...{w} these boxes keeps falling off my hands!"
+    "It's already the fourth time now..."
+    "I'm slowly getting pissed to be honest..."
 
     show mc neutral with dis02
-    p "Well, bitching about it won't help..."
-    p "... I just gotta pick it up again..."
+    p "Well, bitching about it won't help."
+    p "I just gotta pick it up again..."
     p "..."
 
     scene black with dis02
@@ -58,6 +54,13 @@ label start:
     p "And...{w} that's a wrap!"
     p "I think that’s all my stuff sorted out…"
     p "It’s not like I have many furnishings either…"
+    "True, true."
+    "I'm not a rich kid."
+    "I don't have any money to spare for shopping."
+    "I even barely survive from month to month."
+    p "Hm... {w}did I miss any?"
+    p "A double check won't hurt I guess..."
+    p "..."
 
     show mc surprised with dis02
     p "Oh!"
@@ -107,6 +110,14 @@ label start:
     ll "I've always wanted to kick you out."
     ll "So, I guess the problem kinda solved itself."
     ll "Good riddance!"
+    "This is Mrs. Sandra, the owner of this building."
+    "As you can see...{w} she can be pretty harsh."
+    "She's being hostile to me because I'm usually late on payment."
+    "Sometimes I'm kinda fed up with her attitude, but... you know what they say..."
+    "If you want dinner, then don't offend the cook."
+    "The bills here are somewhat a lot cheaper than other places."
+    "It's the only one I could afford, so I have to bear with it."
+    "But thankfully, I'm done with this place!"
 
     show mc angry with Dissolve (0.25)
     ll "Just wrap the keys inside a paper and bury it inside the pot next to the door."
@@ -132,16 +143,18 @@ label start:
     p "I helped out around the building, did some chores too."
     p "..."
     p "*Sigh*"
-    p "I guess that's just how some people are..."
+    "I guess that's just how some people are..."
+    "I hope I don't become one of them someday."
 
     show mc neutral with Dissolve (0.2)
     p "Well..."
-    p "With that out of the way, everything's taken care of... {w}I guess."
-    p "Now... I just need to lock the door and... {w}Haul my ass to the airport!"
+    p "With that, everything's taken care of I guess..."
+    p "Now... I just need to lock the door and..."
+    p "Haul my ass to the airport!"
     p "Wait for me, college life!"
     p "I, [p], will be there soon!"
-    stop music fadeout 3.0
 
+    stop music fadeout 3.0
     scene black with Dissolve (3.0)
     window hide
     centered "{size=+25}{outlinecolor=#000000}Well...{/outlinecolor}{/size}"
@@ -167,27 +180,28 @@ label start:
     centered "{cps=10}{size=+25}{outlinecolor=#000000}2 years...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}I've been laying here... for the past 2 years...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Unable to laugh...{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}Even unable to make a sound...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}Unable to make a sound...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Heck...{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}I can't even cry...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}I can't even cry even if I wanted to...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Maybe...{/outlinecolor}{/size}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}I'm destined to live the rest of my life here...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Everyday...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Other than the TV in this room.{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}My mother's sobbing is always with me too.{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}My mother's sobbing has always accompanied me too.{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}I can hear her...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Every... single... day.{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}...{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}I'm also scared of death.{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}If I'm being honest...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}I'm scared of death.{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}No.{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}Not because of what comes after...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}Not because of what comes after death...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}It's because...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}When the time comes...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}You're supposed to meet the Reaper, right?{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Angel of Death, Harvester of Souls...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Whatever you want to call it, your pick.{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}Then, when “It” comes for my soul...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}When “It” comes for my soul...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}What will I do?{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Haha.{/outlinecolor}{/size}{/cps}"
@@ -216,17 +230,23 @@ label start:
 
     #cg setengah kedip
 
-    p "Gu...uhgh..."
+    p "Gu...urgh..."
     unk "Heeellooo?"
     unk "Holaaa?"
     unk "Bonjooour?"
     unk "Salve?"
     p "Hh..."
+    "I'm feeling dizzy, it's like my head is spinning all over."
+    "It's as if I just exited out of my body and came back in right after."
+    "Also, did I hear hello in 4 different languages just now?"
     unk "[p]!" with vpunch
     unk "Hey!!!" with vpunch
+    "Someone called my name..."
+    "The voice..."
+    "It's a girl's voice..."
     p "S... {w}stop shouting..."
     p "I can hear you..."
-    p "Damn, I'm so tired..."
+    p "Urgh... I'm so tired..."
     "Wait."
     "Did I just spoke?"
     "I CAN SPEAK?!" with vpunch
@@ -237,14 +257,22 @@ label start:
     p "WHOA!" with vpunch
     unk "Nyehehe..."
     unk "Liked what you see?"
+    "H o l y {w} S h i t."
+    "A beautiful cyan-haired girl with a playful voice is sitting on top of me."
+    "Her nipples are inverted but that doesn't make it less attractive..."
+    "In fact... {w}it's beautifully unique."
+    "Wait- {w}Why am I commenting on her boobs?!"
     p "W-who are you?!"
     p "Why are you sitting on top of me?!"
     p "N-no, nevermind that..."
     p "WHY ARE YOU NAKED?!" with vpunch
-    unk "?"
+    unk "Eh...?"
     unk "Uh..."
-    unk "Because... I want to?"
-    unk "And... {w}I know you prefer it this way!"
+    unk "Because... I want to be naked?!"
+    "The girl puffed out her breast along with a slight jiggle to it."
+    "She is clearly trying to show off her boobs."
+    "It's... {w}kinda {i}bouncy{/i}..."
+    unk "I know you prefer it this way!"
     unk "Men loves boobies!"
     p "Yes!"
     p "Wait-"
@@ -252,9 +280,13 @@ label start:
     p "I mean, No!"
     unk "Calm down..."
     unk "You don't need to be that shy..."
+    "She puffed out her chest again! This time, double the effort!"
+    "As if her breast isn't puffed out enough!"
     unk "Just look at my boobs!" with vpunch
     unk "Someone said that my boobs can be pretty soothing when you look at it!"
-    unk "And..."
+    "Soothing?"
+    "Those things aren't soothing at all"
+    "They're turning me on!"
     unk "What do you think?"
     unk "They're awesome, aren't they?"
     p "W-what is?"
@@ -262,13 +294,13 @@ label start:
     p "W-w-whatever!"
     p "Get off and put some clothes on!"
     unk "Okay then..."
-    unk "Nh.... Ah!'
+    unk "Ngh.... Ahhh!"
 
     #pov masih sama, tapi CG ngangkang, anjay spread eagle"
 
     "..."
-    p "W-w-w-waaa-"
-    p "aaaaaaAAAAA!" with vpunch
+    p "WHOA-OA-OA!!!"
+    p "aaaaaaAAAAAAAA!" with vpunch
     unk "Hahahaha!"
     unk "You're so gullible!"
     unk "I feel like I can tease you for all eternity!"
@@ -281,13 +313,13 @@ label start:
     "... And sooner or later, they'll give up eventually."
     p "That's it?"
     p "If you got nothing else to do..."
-    p "Can you get off me?"
-    p "Please?"
+    p "Can you get off me, please?"
+    "Please-work-please-work-please-work."
     unk "(W-what's up with this guy?)"
     unk "(Just now his face was beet red...)"
     unk "(Now, he's putting up a poker face...)"
-    p "(...)"
-    p "(Please hurry up and respond... T-T)"
+    "..."
+    p "(Hurry up and respond... T-T)"
     p "(I'm not used to acting like this...)"
     #disappointed
     unk "F-fine!"
@@ -297,30 +329,32 @@ label start:
     "This woman is dangerous."
     "I'm sure of it."
     "I need to be careful around her."
-    "I can't predict her."
 
     #scene black with dissolve
-    "The woman got off my body and stood up instantly."
-    "Obviously, I quickly got up too."
+    "The girl got off my body and stood up instantly."
+    "Obviously, I quickly followed."
     #scene eden with dis10
     #show mc muncul dari bawah
     #show deity muncul dari bawah, naked
+    #show mc ngadep depan
+    p "!" with vpunch
     #show muka mc matanya entah kemana, yg jelas ga ngadep depan, malu2
+    p "..."
     p "Clothes..."
-    unk "?"
+    unk "...?"
     p "Clothes, on."
     p "Now."
-
-    unk "Now then..."
-    unk "Close your eyes."
-    unk "Because this might be too much for your eyes."
+    unk "*Sigh*"
+    unk "Go close your eyes..."
+    unk "Because this might be a bit too much for your eyes."
     scene black
     p "Okay..."
     unk "Ancient cloth of the Mystics..."
     unk "Come forth and protect your master!"
     p "(Ancient cloth of the Mystics?)"
-    "I don't know what the hell is that, but it sounded really lame."
-    "It's like a something from those 5/10 generic superpower anime."
+    "I don't know what the hell is that, but it sounded pretty lame."
+    "It's like a something from those 5/10 generic magical action anime."
+
     # #sfx sihir begitu xixi
     show white zorder 5 with dis05
     pause 1.5
@@ -334,52 +368,61 @@ label start:
     "What's with that anime-like sound?"
     "Probably just my imagination..."
     "I think..."
-    #hide misty_naked
-    #show misty
+
     unk "Hey!"
     unk "You can go ahead and open your eyes now."
     unk "I'm already dressed!"
     p "O-okay!"
-    #scene eden, munculin mc dan deity clothed.
+    #scene eden,
+    #show mc
+    #show deity clothed topless sebelaheee
     unk "Tadaaa!"
     unk "How do I look?"
+
     #muka mc berubah, entah mimisan, atau kaget malu2 atau malingkan wajah
     p "Huuuuhhhhhhh?!" with vpunch
     p "W-why are you dressed like that?!"
-    p "(Holy shit!)"
-    p "(What's the deal with her dress?!)"
-    p "(It's even hotter than before!)"
-    p "(Can't she stop teasing me?!)"
+    p "(Holy...)"
+    "What's the deal with her dress?!"
+    "Well, forgive me for being a guy but... this dress..."
+    "It's even hotter than before, holy shit!" with vpunch
+    "Can't she stop teasing me, even just for a second?"
     unk "What do you mean “dressed like that”?"
     unk "This is my dress."
-    unk "Like my actual o f f i c i a l dress!"
+    unk "Like my actual {w} o f f i c i a l  {w}dress!"
     unk "A fitting dress for a “blessed” deity like me!"
-    "I know she's “blessed”. One look at her body and you already know."
+    "Yeah, yeah..."
+    "I know you're “blessed” and all that."
+    "One could tell from what they see."
     "But... {w}isn't this a little bit too much?"
     "..."
     "Same rule still applies."
     "If I gave in, I'm losing the game."
-    ""
+    "I need to fight it back."
+    p "Uh..."
     p "Look, I know you're..."
-    p "... {w}“Confident”,{w} with your... b-body..."
-    p "But you shouldn't dress like that!"
+    p "... {w}“Confident”,{w} with your... b-bod- I mean a-appearance..."
+    p "But don't you think you shouldn't dress like that?"
     p "Why did you leave one of your boob open?!"
+    p "Doesn't it feel cold at night?"
     unk "Uh?"
     unk "Leave what open?"
     unk "This?"
     unk "Oh..."
-    unk "It's not my fault!"
+    unk "This is not my fault!"
     unk "I didn't leave it open on purpose!"
     unk "Well..."
     unk "The dress was designed like that!"
+    unk "It's factory default!"
     unk "Nothing I can do 'bout it!"
-    p "Huh?!"
-    p "What kind of weirdo designed this?"
+    p "(Huh?)"
+    p "(What kind of weirdo designed this?)"
     unk "She's... eh..."
     unk "You could say..."
     unk "She's the highest ranked of the Deities."
     unk "Never met her myself!"
     p "..."
+    "Deities? {w}Open boobs? {w}Highest ranked?"
     p "aaaaaaaaaaaAAAAAAAA!!" with vpunch
     p "Time out! Time out!"
     p "I don't get it, I don't get any of it!"
@@ -387,98 +430,131 @@ label start:
     p "Deities? Mystical Cloth?"
     p "You also said you're a deity, right?!"
     p "What's a deity?!"
-    p "And why are they half-topless?!"
+    p "And why are they wearing half-topless dress like this?!"
     p "Also, why the hell can I move my body and also talk?!" with vpunch
     p "This doesn't make sense at all!"
+
     #show deity muka kaget
+    #pause 1.05
     #show deity muka neutral
     unk "Ehem..."
     unk "I'm sorry for the confusion..."
     unk "Let us start over..."
+    "Her demeanor completely changed in a flash."
+    "It's like I'm witnessing a pro businesswoman snap back to her working ethics."
     unk "..."
     unk "Welcome to the other side of life, [p]."
     unk "Unfortunately, you have passed on."
     unk "Though, with your condition, I can't judge whether it's fortunate or unfortunate."
     p "Ah..."
     p "I see..."
-    p "I don't remember any of it..."
-    p "I guess I went through a painless death."
+    "I don't remember any of it happening."
+    "I just woke up to a girl sitting on top of me, then I can talk and move."
+    "Also we were talking about deities and all that just now."
+    "If I'm really dead, and this is the afterlife..."
+    "Then it all finally make sense."
+    p "Haha, guess I went through a painless death."
     p "..."
-    p "My mother..."
-    p "What about my mother?"
-    unk "Your mother's mourning, like any other mother will."
-    unk "But, at the same time, she's relieved."
+    "I think I'm forgetting something important..."
+    "Ah, yes, that's right..."
+    p "... My mother!"
+    p "What about my mother?!"
+    p "Is she all right?!"
+    unk "Your mother is mourning for you, like any other mother will."
+    unk "But, yes... she's all right."
+    unk "She's feeling grief but at the same time, relieved too."
     p "Relieved?"
     unk "Her beloved son is now resting after suffering for so long."
-    p "I... don't know what to say..."
-    p "I feel sad that I left her..."
-    p "But... she's better off without me."
-    p "I'm sure my hospital bills are only dragging her down."
-    p "Well... there's nothing I can do about it, could I?"
-    unk "Sadly... no."
+    unk "If you were in her position, wouldn't you feel the same?"
+    p "I... {w}I don't know what to say..."
+    p "I feel...{w} sad."
+    p "Like, I shouldn't have left her..."
+    p "But if I think about it, she's better off without me."
+    p "I'm sure my hospital bills are only dragging her feet down."
+    p "Well... there's nothing I can do to help her, could I?"
+    unk "Sadly, no."
     unk "The dead cannot interfere with the living."
-    p "Is that so?"
     p "..."
+    ""
+
     #mc smile
     p "I wish you a happy life, Mom."
     p "I will always be rooting for you."
+    p "You're still kinda young, so maybe it's time for you to find another man."
+    unk "Another man, what about your father?"
+    p "About that... {w}my father left us when I was still a child."
+    p "I don't know why left, never got the chance to ask either..."
+    p "And obviously I haven't seen him ever since."
+    p "My mom considered remarrying, but she put it down."
+    p "She said that if she remarries, she won't be able to fully take care of me."
+    p "So now that I'm basically gone, I really hope she consider it again."
     unk "(How sweet...)"
     p "..."
-    p "Anyways, how come you know everything about me..."
-    p "But I don't know a single thing about you?"
-    p "You have a name, at least?"
+    p "Anyways, I've told you stories about myself."
+    p "Care to share some things about yourself?"
+    p "Well, you have a name, at least?"
     unk "Of course I do!"
     unk "My name is Mystique."
     mq "But..."
     mq "You can call me Misty if you'd like, I like that name more."
-    mq "Oh, actually... nevermind that."
+    mq "Oh, actually... {w}nevermind that."
     m "I insist that you call me Misty!"
     p "Misty? Why Misty?"
+
     #deity ceria
     m "Because it sounds waaay cuter! Don't ya think?!" with vpunch
     #mc face annoyed
     p "(C-{w}cringe...)"
     m "Anyways!"
-    m "Your life was kinda unfair, so..."
-    m "I've got an interesting offer for you!"
+    m "Your life was kinda unfair, so I felt pity on you..."
+    m "Check this out, I've got an interesting offer for you!"
+
     #mc face confused
-    p "Huh..."
+    "An offer?"
+    "I hope it doesn't turn out to be a deal with the devil..."
     p "What kind of offer?"
     p "Before you ask..."
     p "No."
     p "I won't trade my soul for something weird."
+
     #deity face flustered
     m "I-it's not that!"
+
     #deity calm face
     m "Ehem..."
     m "So basically..."
-    m "I'll give you 2 options to choose from!"
+    m "I'm gonna give you 2 options to choose from!"
     m "1. You can live a new life, experience what was taken from you!"
     m "You will still keep your current appearance and memory."
     m "Though, you can't live in your previous world."
     m "Multiple worlds do exists, in case you didn't know!"
     m "We Deities watch over them for since long ago."
-    m "They are pretty similar, in the terms of technology and advancements."
+    m "Some of them are pretty similar, in the terms of technology and advancements..."
+    m "But of course, some are uniquely different as well."
     m "Wanna know something mind-blowing?"
     p "Sure?"
+    m "Listen up!"
     m "There can never be the same person across these worlds!"
-    m "Meaning, there's no parallel you, or parallel someone else!"
-    m "So you don't have to fear about meeting yourself in other worlds!"
+    m "Meaning... {w}there's no parallel you, or parallel someone else!"
+    m "So you don't have to worry about meeting yourself in other worlds!"
     p "I see..."
-    p "So, basically, I can experience life again, but only in “another world”..."
-    p "And I will also retain my appearance and my memories?"
+    p "So, basically, I can experience life again, but only in “another world”."
+    p "And I will also keep my appearance and my memories?"
     m "Correct!"
     m "I hear it's like “New Game+”!"
+    m "Well, people on your world usually call it that..."
     m "I don't know what that means, though..."
-    p "Hahaha, it's not, but close enough, I guess."
+    p "Hahaha, it's not New Game+, but close enough, I guess..."
+    "So basically, the first option is that I can transfer to another world, and live my life there."
+    "My appearance and memory will still be intact, that's a lot better than a reset."
     p "What about the other option?"
     m "Option number 2. You can go directly to Heaven!"
     m "You can enjoy a peaceful life, lying down in a field of grass..."
     m "Eating freshly picked fruits... and enjoying the scenery of a majestic river!"
     m "Well, basically anything people usually do in Heaven!"
     p "Hm..."
-    "Both offer are somewhat tempting."
-    "Also, seems like this is a one-time choice."
+    "Sounds kinda boring but, you can never judge something right away..."
+    "Both offer are somewhat tempting in their own ways."
     "I should really think it through and pick carefully."
     m "So, what will it be, [p]?"
 
@@ -486,24 +562,35 @@ menu:
     p "(What do I want?)"
 
     "I want a second chance to live my life.":
+
         $ value = 0
+        "The other offer is very tempting, I could be happy forever."
+        "But...{w} it sounded kind of boring, isn't it?"
+        "And of course, after I live through my second life, I can still go into heaven, right?"
+        "So, I figured, why not just enjoy the journey then?"
         p "I..."
-        p "If it's possible..."
+
         #show muka mc serius
         p "I want a second chance to live my life!" with vpunch
         p "I already missed 2 years of my life, only lying down in a hospital bed."
         p "I don't want to miss out anymore..."
-        p "I want to know how being truly alive feels like!"
-        m "That's the spirit, young man!"
+        p "I want to experience how youth is like!"
+        m "That's the spirit, brudda!"
+        p "(Brudda?)"
         m "Good choice, [p]!"
         jump a_001
 
     "I'm tired of suffering, I just want to rest.":
 
         $ value = 1
+        "The other offer is very tempting, I could live my life again."
+        "But...{w} it sounded kind of scary, isn't it?"
+        "And of course, there's no guarantee that I'll live a happy life this time."
+        "So, I figured, why not just drop the ball and take a rest?"
         p "I..."
         p "After all the suffering I've been through..."
         p "I don't even want to think about life anymore..."
+
         #muka mc sedih
         p "I'm tired..."
         p "I'm very tired of it..."
@@ -515,17 +602,26 @@ menu:
         jump a_001
 
     "I'm not sure... I'll let Misty pick for me.":
+        "Both offer is very tempting, I could live my life again, or I could go to heaven..."
+        "But..."
+        "I CAN'T DECIDE!" with vpunch
+        "They both sounded sooo good!"
+        "Oh right! Why not let Misty decide for me?"
+        "She's wise with choices....{w} right?"
         p "I..."
         p "I'm actually not sure..."
         p "I'm too confused and can't think straight at this point..."
         p "How about..."
         p "I'll let you pick for me?"
+
         #muka deity kaget
         m "Huh?!"
         m "You want me to pick for you?"
         m "Are you sure?"
         p "Yeah, I'm sure..."
         p "Pick any option that you think is better for me."
+        m "Are you sure?"
+        p "Yep."
         m "Okay then..."
         $ value = getNumber()
         m "If you insist..."
@@ -536,10 +632,13 @@ label a_001_insist:
         m "I think you should..."
         m "... Live a new life."
         m "I'm giving you a second chance to experience what you missed."
-        m "I think, you should take it and just... experience life?"
+        m "I think, you should take it and just... go for it."
         m "Are you okay with my choice?"
-        p "Now that you mention it..."
+        "Now that you think of it..."
+        "After I live through my second life, I can still go into heaven, right?"
+        "So, why not just enjoy the journey then?"
         p "Living a new life sounds pretty good!"
+        p "And it's not like I can't go to heaven after!"
         p "Yeah... I'm 100\% okay with it!"
         jump a_001
 
@@ -552,14 +651,19 @@ label a_001_insist:
         m "I really am!"
         m "Peace is what you might just need after all of these time..."
         m "Are you okay with my choice?"
+        "Now that you think of it..."
+        "There's no guarantee that I'll live a happy life this time."
+        "So, why not just drop the ball and take a rest?"
         p "Yeah..."
-        p "What's the point of asking you to pick if I'm not okay with it?"
+        p "I'm confident that I'll be happy in this life too."
         p "I'm 100\% okay with it."
+        p "That's a smart choice."
         jump a_001
 
 label a_001:
     if value == 0:
         m "Well then!"
+        m "A new life it is!"
         m "You wanna head off right now?"
         p "Sure..."
         p "If there's nothing left to do..."
@@ -571,8 +675,10 @@ label a_001:
         m "{b}Tryleiriras... tylerrili!{/b}"
         show white with dis10
         pause 1.5
+        p "Urgh!" with vpunch
         "Ah, again..."
-        "I hear that mystical sound, along with the blinding lights."
+        "I hear that anime-ish sound, along with the lights."
+
         #show portal
         hide white with dis10
         pause 1.5
@@ -582,24 +688,33 @@ label a_001:
         p "T-that's it?!"
         p "What do I do with it?"
         p "Do I just walk right in?"
-        p "(I don't need to say those embarassing things, do I?)"
+        "I don't need to repeat those embarassing things she said, do I?"
+        "Please don't."
+
         #show deity angry
         m "Yep! Just walk right in!"
         m "When you enter the portal, you'll immediately cross between worlds!"
+
         #show mc
-        p "Hahaha..."
+        p "(Phew...)"
+        p "Hahaha... okay..."
         p "Can't believe I'm getting nervous..."
-        m "Why?"
-        m "You don't know anyone there, no reason to be nervous."
+        "It's the same feeling when you just got to a new school and you don't know anybody there."
+        "The anxiety, excitement, they're all starting to kick in."
+        m "Why are you?"
+        m "You don't know anyone there, no reason to be nervous!"
         p "You're right, there's no reason to be nervous!"
+
         #mc confident (senyum, alis marah)
         p "I guess this is it then..."
-        m "Yep, this is it..."
-        m "The gateway to fiery youth!"
+        m "The gateway to my fiery youth!"
+        p "Hey, Misty..."
         p "Will I ever see you again?"
         m "Well if you die again... {w}perhaps you will?"
         m "But I hope that won't happen though!"
         m "At least not anytime soon!"
+        p "Hahaha, right!"
+        p "I'll cherish this new life!"
         p "Well! I'm heading off!"
         p "I wanna see how the other world is like!"
         m "Good luck on your travels!"
@@ -608,15 +723,16 @@ label a_001:
         m "Hehe..."
         m "Maybe? Who knows?"
         p "Heh."
+
         #show happy
         p "Alright!"
         p "Here goes..."
-        p "On the count three..."
+        p "On the count of three..."
         p "One!"
         p "Two!"
         m "Wait!"
         p "Huh?"
-        m "The past doesn't matter."
+        m "The past doesn't matter!"
         p "What?"
         m "When you take a new step in life..."
         m "The past doesn't matter."
@@ -633,6 +749,7 @@ label a_001:
         p "See you later!"
         p "Alright then..."
         p "Three!" with vpunch
+
         show white with dis10
         pause 1.0
         #sfx masuk portal
@@ -665,6 +782,7 @@ label a_001:
         m "You're welcome."
         m "Good bye, [p]..."
         m "May you find peace in the field of reeds."
+
         scene white with dis30
         #sfx magic
         p "(Ah... that sound...)"
@@ -697,22 +815,24 @@ label b_001:
     "This is nuts!" with vpunch
     p "I TAKE IT BACK!"
     p "I FREAKING TAKE IT BACK!" with vpunch
-    p "SHE'S NOT A DEITY!"
+    p "SHE'S NOT A KIND DEITY!"
     p "SHE'S A CRAZY ASS BITCH!" with vpunch
     "I knew something weird would happen..."
     "Just didn't expect it'll be this..."
     "Shit, I got played with... {w}again!"
     "Dang it, if I meet her again, I swear..."
     "I'll strangle her myself!" with vpunch
+
     p "GAAAAAHHHH!"
     p "WHAT DO I DO NOW?"
     p "THINK{w}, THINK{w}, THINK!"
     p "I DON'T WANT TO DIE{w}, AGAIN!" with vpunch
+
     #scene water
     p "THAT..."
     p "IS THAT THE SEA?"
     p "HAHAHAHA!!!" with vpunch
-    p "LADY LUCK IS STILL ON MY SIDE!"
+    p "LADY LUCK IS STILL WITH ME!"
     "I'm panicking so much right now, I mean... who wouldn't?"
     "I thought it's surely the end for me, but then I see hope right below me!"
     "The TV... {w}yes!"
@@ -721,10 +841,9 @@ label b_001:
     "I don't know why but I think it eases the impact for them!"
     "It might work...{w} or might not work..."
     "But at least it's the best chance I have to survive this!"
-    "Hahaha! 2 years of watching TV is finally paying off!"
     p "aaaaaaaaaaAAAAAAAAA!!"
     p "THE HELL WITH IT ALL!"
-    p "LET'S DO THIS!" with vpunch
+    p "I GOT NO CHOICE!" with vpunch
     "I tilt my body forward, trying to imitate the diver's posture."
     "After that, I also straighten my arms and cram them together."
     "Again, I'm just doing what I can to imitate the divers."
@@ -732,6 +851,7 @@ label b_001:
     "I can only hope for the best."
     #scene black, suara kecebur.
     #stop all sound...
+    "One lesson I learned, the most valuable thing in life, is life itself."
     centered "{size=+25}{outlinecolor=#000000}Few days later...{/outlinecolor}{/size}"
 
     #sfx beach gitu
@@ -847,20 +967,22 @@ label b_001:
     p "This place..."
     p "If this place is what I think it is..."
     p "Where's tha-"
-    p "!" with vpunch
+    p "!!!" with vpunch
 
     #hide mc
     #transisi swiperight
     #show deity
     m "..."
     # ekspresi kaget bersalah
-    m "!" with vpunch
+    m "!!!" with vpunch
     #hide deity
+
     #transisi swipeleft
     #show deity
     #show mc
     m "H-hey [p]..."
     m "L-long ti-"
+
     #mc angry
     p "Shut up you crazy ass bitch!"
     p "What the hell is wrong with you?!"
@@ -872,34 +994,37 @@ label b_001:
     p "Is it just to make me experience death twice?!" with vpunch
     p "You think this is funny?"
     p "How about you open up that damned portal again..."
-    p "And I'll throw your ass off myself!" with vpunch
+    p "And I'll throw your ass there myself!" with vpunch
     m "S-sorry..."
     m "But, please don't do that!"
     m "That's so mean!"
     p "What?!" with vpunch
-    p "I'm the one who's mean now?"
-    p "Listen you li-"
+    p "I'm mean?"
+    p "Listen here you little-"
     m "Sorry, okay!" with vpunch
     m "I said I'm sorry!"
     m "It's not like I wanted this to happen either!"
-    m "One thing you should know, we Deities cannot possess an evil heart."
-    m "If we ever do something evil, we'll be tormented!"
-    m "So if I really planned that, you won't be seeing me here!"
+    m "The spell..."
+    m "Yes, it's the spell!"
     m "The spell was imperfect in the first place."
     m "I didn't remember the perfected one!"
-    m "That's why something like that happened!"
-    p "Huh?"
+    m "So I used this one!"
+    "She did...{w} WHAT?!"
+    "She doesn't remember the perfect one, so instead used the imperfect one?!"
+    p "..."
     p "You forgot the perfected one..."
     p "So you decided to go with the imperfect one?"
-    p "That's some next-level jackassery right there!"
+    p "Without even thinking of my safety?!"
+    p "What are you? A jackass?"
     p "It-"
     p "..."
+
     #mc lemes
     p "Gah...." with vpunch
     p "Nevermind..."
     p "I'm too tired to argue..."
     p "..."
-    p "Do I get another chance"# to live?"
+    p "Do I get another chance?"
     m "Chance?"
     m "What chance?"
     p "A chance to live again, duh."
@@ -913,26 +1038,32 @@ label b_001:
     m "Who said you died?"
     p "I didn't?"
     m "Nope..."
-    p "..."
+    "I'm not... dead?"
+    "Why does this place look exactly the same as from before?"
+
     #flashback
     p "I'm not going to brag about my diving skill because clearly, I have none."
     p "And I'm sure that alone won't be enough to save me."
     p "Unless..."
     p "Something or SOMEONE intervened."
     p "I'm guessing..."
-    p "You did."
+    p "You... did?"
+
     #show deity happy
     m "Ding ding ding!"
     m "Looks like I underestimated you for a bit!"
-    m "Turns out, you're pretty perceptive."
+    m "Turns out, you're quite the thinker."
     m "I used my powers to soften your impact."
-    m "Then you slowly drifted to a nearby beach."
-    p "Beach?"
+    m "But you still broke a few bones though."
+    m "Don't worry, I used my powers to make your healing process faster."
+    m "After the fall, you slowly drifted to a nearby beach."
+
+    p "A beach?"
     p "Am I on the beach right now?"
-    m "Well... {w}you were."
-    m "The people on the beach rushed you to a hospital quickly."
+    m "Well... {w}you were..."
+    m "But the people on the beach rushed you to a hospital quickly."
     m "And it's been a few days since then."
-    p "Back to the hospital, again?"
+    p "Urgh, back to the hospital, again?"
     p "Sigh..."
     p "{i}Feelsbadman{/i}..."
     m "What?"
@@ -940,61 +1071,76 @@ label b_001:
     p "You won't understand the reference..."
     m "(What's a reference?)"
     p "Anyways!"
-    p "Did anything happen when I was unconscious?"
+    p "Did anything happen while I was unconscious?"
+
     m "Hm..."
     #flashback scene itu
     m "..."
     #muka deity merah
     m "(He's kinda huge...)"
     m "..."
-    p "Why are you blushing?"
-    m "W-who's blushing?!"
-    p "You are."
+    p "Why are is your face red?"
+    m "W-whose face is red?!"
+    p "Yours?"
     p "Did something happen?"
     m "N-no."
     m "Nothing happened..."
+    "Sometimes she's overconfident but she clearly can't lie."
+    "It's kinda funny to see, to be honest."
+    "This is the perfect chance to tease her back!"
+
     #smug mc
     p "Oh... {w}really?"
     #even smugger
     p "Are you sure?"
+    m "Y-yes!"
+    p "Really?"
+    p "I don't buy it..."
     m "Alright alright!"
     m "Something did happen..."
     m "But I ain't telling you!" with vpunch
     m "You'll find out someday!"
     m "If I told you, it won't be a surprise anymore!"
     p "(A surprise?)"
-    "Considering it's this MISTY..."
+    "Considering it's MISTY..."
     "I don't think the surprise is close to anything you consider \"good\"."
-    "But... if she insists, why not..."
+    "But... if she insists, well... why not..."
     "If something happens to me, she'll help me right?"
     p "Well... if you say so..."
     m "(Phew...)"
-    m "(I don't him to know that I'm impressed by SOMETHING of his.)"
-    p "Then... what brings you here?"
-    p "Or... where even is this anyway?"
-    p "I'm not dead, so it's clearly not in the afterlife where we first met."
-    p "But this place looks the same."
-    m "Actually, we are inside your subconscious mind right now."
-    p "But why does it look like the afterlife?"
+    m "(I don't want him to know that I was impressed by SOMETHING of his.)"
+    m "(After all, we Deities also have sexual needs.)"
+    p "Then... if you already healed me, and all..."
+    p "Why are you here?"
+    p "And... where is this anyway?"
+    p "I'm not dead as you say, so it's clearly not in the afterlife..."
+    p "But this place looks exactly the same."
+    m "We are inside your subconscious mind right now."
+    p "My subconcious mind?"
+    p "But why does it look exactly like the afterlife?"
     m "I don't know, go ask yourself."
     m "This place is inside your mind after all..."
-    m "That means, maybe..."
-    m "Deep down, you actually really like the afterlife and created its replica unconciously."
-    p "Well, I guess you're kinda right..."
-    p "It's a pretty good place to relax after all."
+    m "Hmmm..."
+    m "Maybe..."
+    m "Deep down, you actually really like the afterlife..."
+    m "Then your mind created its replica unconciously."
+    p "Well, that kinda make sense I guess..."
+    p "It is a pretty nice place to relax after all."
     m "And as for why I came here..."
     m "I felt really guilty and I want to apologize directly."
-    m "I-{w}I'm sorry for what happened..."
+    m "[p], I-{w}I'm really sorry for what happened..."
     m "Like I said, the spell wasn't perfect..."
     m "I shouldn't have used it."
+
     p "(Ah...)"
     p "(She's feeling guilty...)"
-    "People who are feeling guilty... they're basically pushovers."
+    "People who are feeling guilty... they're basically pushovers right now."
     "It means if you persuade them hard enough, they'll eventually say yes."
+
     #muka mc berubah jd kek senyum jahil
     p "(Hehehe...)"
     p "(I'm sorry Misty...)"
-    p "(But, this is a perfect chance to get you back!)"
+    p "(But, this is a perfect chance to get back at you!)"
     m "(W-what's up with his face?!)"
     p "Sorry but..."
     p "A simple apology is not going to cut it."
@@ -1010,8 +1156,11 @@ label b_001:
     p "So... what will you offer?"
     m "U...uh..."
     m "What do I offer?"
+    "If we let them to make an offer first, they will have a hard time."
+    "The guilt they are feeling will surely affect their thinking."
     m "W-why don't you just tell me what you want?"
-    p "Like I said, you must make an offer first."
+    p "No can do."
+    p "Like I said, you must make the offer first."
     m "Then.."
     m "...How about-"
     p "Declined!" with vpunch
@@ -1022,30 +1171,38 @@ label b_001:
     "Whatever their offer is, we should always reject their first offer."
     "If you're aggressive enough, they will think that you're no fool to mess with."
     "Do this correctly and they will reconsider their offers."
-    p "Please do a better one ^_^"
+
+    #mc senyum
+    p "Please do a better one."
     m "..."
     m "How about this?"
     m "It's an artifact called \"The Vial of Unending Hygiene\"!"
     m "A drop of it will make any piece of clothing forever be clean."
     m "You don't need to wash your clothes until the day you die!"
+    "The Vial of Unending Hygiene?"
+    "A drop of it will make any piece of clothing be clean for eternity?"
+    "Pretty good... {w}too bad I'm not that lazy."
     p "Pass!"
-    p "This thing's useless! I'm not that lazy."
+    p "I'm not that lazy."
     p "Do a better one."
     m "Okay..."
     m "Then this one!"
     m "An ultra-advanced smartphone!"
     m "It will magically upgrade its hardware every year."
     m "You don't have to worry about your phone getting old, ever!"
+    "An ultra-advanced smartphone that upgrade its hardware by itself every year?"
+    "I'm only using my previous phone for chatting and calling, I don't need them top of the line hardwares."
     p "Meh, hard pass."
     p "I'm just using them for chats and calls."
     p "Why would I worry about the hardware?"
     m "(I thought people always buy new AyePhones every year...)"
-    p "Next?"
+    p "Next one?"
     m "..."
 
     #scene black
     centered "{size=+25}{outlinecolor=#000000}Some heated negotiations later...{/outlinecolor}{/size}"
 
+    #scene eden, dsb
     p "..."
     m "aaaaaaaaAAAAAAAA!" with vpunch
     m "I can't do this anymore!"
@@ -1053,19 +1210,22 @@ label b_001:
     m "What do you want, exactly?!"
     p "Well, none of your offers are interesting at all..."
     m "Then just say what you want!" with vpunch
+    "There! there's my cue!"
     p "Alright..."
     p "You mentioned \"New Game+\" when we first met, right?"
     p "Then..."
     p "How about you give me a power like yours."
     p "That way it'll be a real \"New Game+\" for me, no?"
     m "..."
+
+    #muka kaget
     m "WHAT?!" with vpunch
     m "Nah..."
     m "No way!"
     m "Absolutely no way!"
     m "And it's not even possible."
-    m "We Deities have powers, but that power can't create another power!"
-    p "So... {w}you can't make powers..."
+    m "We Deities have powers, but our powers can't be used to create another power!"
+    p "So... {w}you can't create powers..."
     p "How about giving your powers to me?"
     m "It is possible, to give my pow-"
     m "Wait!"
@@ -1079,15 +1239,16 @@ label b_001:
     p "Then it's just a matter of time before I can't take it anymore and kill myself."
     p "After I die, I'll probably meet with another deity instead of you."
     p "We'll probably have a chat like we did before, and..."
-    p "Surely they will listen when I tell them a story about someone named Misty?"
     #muka licik
-    p "FYI, my english teacher told me I'm really good at \"hyperboles\"!"
-    m "(!)"
-    m "(This jackass!)"
+    p "Surely they will listen when I tell them a story about someone named Misty?"
+    p "FYI, my english teacher told me I'm really good at dramatizing things!"
+    m "!" with vpunch
+    m "(This rascal!)"
     m "(He's threatening me!)"
     m "..."
     m "*Sigh*"
     m "Fine..."
+    p "(Well, that was easy...)"
     m "You made a good point."
     m "(Considering it was kinda my fault, I think it's fair...)"
     m "But!" with vpunch
@@ -1101,7 +1262,7 @@ label b_001:
     m "15\%."
     p "40\%!"
     m "Still 15\%"
-    p "Sheesh, you're supposed to be a kind deity!"
+    p "Sheesh, you're supposed to be a kind deity who helps people!"
     p "Why are you so stingy towards me?"
     m "Stingy your butt!"
     m "It's you who's too ungrateful!"
@@ -1109,27 +1270,22 @@ label b_001:
     p "30\% or I'm snitching!"
     m "(...)"
     m "(Grrrr...)"
-    m "25\%!" with vpunch
+    m "20\%!" with vpunch
     m "Final offer! Take it or leave it!"
     p "Deal!" with vpunch
-    "I guess I can settle with 25\%..."
+    "I guess I can settle with 20\%..."
     "I don't know how powerful she is at full power, so..."
-    "I guess 25\% is still something you can't underestimate either."
+    "I guess 20\% is still something you can't underestimate either."
     m "(Ugh...)"
     m "(I feel like this is a bad idea...)"
-    m "Alright then, I'll confirm with you once again."
-    m "If I bestow this power upon you, you can no longer do evil deeds."
-    m "Whatever you do, you musn't do something evil."
-    m "If you did something evil, your soul will be tormented until you truly repent."
-    m "Are you sure you want this power?"
-    p "100\%."
-    p "Though I have a harsh mouth and can be pretty cunning at times..."
-    p "I'll say this:"
+    m "If I bestow this power upon you, I hope you take it with great responsibility."
+    m "Someone's uncle said: {i}With great power, comes great responsibility{/i}."
+    p "Well, I can be harsh and pretty cunning at times..."
+    p "But, I'll say this:"
     p "I'm not a bad guy."
     p "I can guarantee that, at least."
     m "(Well, I don't sense any darkness in his heart either.)"
-    m "Fine then..."
-    m "Let's get started."
+    m "Let's get started then."
     p "Wait! Before you start..."
     p "Please don't use imperfect spells again!"
     p "I'm honestly scared now..."
@@ -1137,8 +1293,9 @@ label b_001:
     m "Yeah yeah, I get you."
     m "This one's a perfect spell."
     m "It's the same spell that was used when I got my powers."
-    m "Alright, you know the drill."
-    m "Close your eyes, it can be pretty dangerous for your eyes."
+    p "Phew..."
+    m "You know the drill... close your eyes."
+    m "It can be pretty blinding, as usual."
     scene black
     m "..."
     m "{b}Diphipiel xitia, zirius, fozenien, omayuque, fruno, gyabepien...{/b}"
@@ -1150,9 +1307,9 @@ label b_001:
     p "(Ggh!)"
     "The same blinding light appeared again, but this time..."
     "I also felt a great power surging through my body."
-    "!!!" with vpunch
+    p "!!!" with vpunch
     p "(This is more intense than I imagined!)"
-    p "(25\% of her power already feels like this?)"
+    p "(20\% of her power already feels like this?)"
     p "(How overpowered is she?!)"
     scene black
     p "..."
@@ -1167,6 +1324,7 @@ label b_001:
     m "..."
     p "(...)"
     "I can't take this awkward silence anymore, I had to open my eyes out of curiosity."
+
     #show deity muka despair lucu
     p "..."
     m "..."
@@ -1181,7 +1339,9 @@ label b_001:
     m "THEY'RE GONE!" with vpunch
     p "They're gone?!"
     p "How could that happen? Where did it-"
+
     #cg chibi marah
+    "Misty jumped and grabbed me in an instant."
     m "GIVE IT BACK!"
     m "GIVE IT BACK TO ME!"
     p "H-hey! Calm down!"
@@ -1192,17 +1352,22 @@ label b_001:
     m "YOU TRICKED ME INTO GIVING YOU SOME OF MY POWERS!"
     m "I MESSED UP THE INCANTATION AND TRANSFERRED IT ALL!"
     m "NOW I'M JUST A WORTHLESS POWERLESS DEITY!"
-    m "..."
+    "Ah... that's why..."
+    "She messed up, again..."
+    "This time she transferred all of her powers to me."
+    "No wonder the surge felt so incredible."
     m "HUAAAAAAAAAAAAAAA!!!"
     m "A HUMAN TRICKED ME!"
     p "C-calm down there..."
     m "HUAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!" with vpunch
     p "H-hey calm down for a bit..."
     m "HUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!" with vpunch
+
     #emote mc marah
     p "!"
     p "I SAID CAAAAAALMMMMMMM DOOOOOOWNNNNNNNNNN!!!" with vpunch
-    p "..."
+    "I had to scream back at her to make her calm down."
+    "If I don't, my ears might bleed out."
     m "..."
     m "*Sob* *Sob*"
     p "Look, that wasn't my fault..."
@@ -1212,9 +1377,13 @@ label b_001:
     m "R-really?"
     p "Yeah, a man never goes back on his words!"
     m "O-okay..."
+    "I mean... what can I do?"
+    "Sure, I like to get back at others, but like I said..."
+    "I'm not a heartless person, I also feel empathy for others."
+    "Losing her powers must felt like losing your home."
 
     #scene black
-    centered "{size=+25}{outlinecolor=#000000}A few incantation lecture later...{/outlinecolor}{/size}"
+    centered "{size=+25}{outlinecolor=#000000}A few incantation lectures later...{/outlinecolor}{/size}"
 
     #enter scene kekbiasanya, animasi dsb, bg, deity,
     p "..."
@@ -1224,11 +1393,15 @@ label b_001:
     m "{b}Menonriaut Coain praegebe, olle, pienteodi, saeeumquod...{/b}"
     m "{b}Xefri bruma, myuwe gyuwe tyuwe pyuwe... nuncisu crucide!{/b}"
     m "..."
-    m "See, it wasn't hard..."
+    m "See, it's not that hard..."
     m "How could my tongue slipped before..."
+    P "(These incantations are so cringe...)"
+    "I had to go through this long lecture and chant some cringe spells for Misty."
+    "It's a weird experience, but kinda fun, I guess."
+    "I learned how to do magic."
     m "Now then..."
     m "You got it?"
-    p "I think so..."
+    p "I-I think so..."
     m "Well then, moment of truth."
     m "Go try it out..."
     m "And don't forget to concentrate and control your breathing!"
@@ -1248,24 +1421,27 @@ label b_001:
     p "(I can feel them circling around me...)"
     p "(Hah, I'm a natural at this!)"
     p "(Then comes the...)"
-    p "(Incantation!)" with vpunch
+    p "(Cringy Incantation!)" with vpunch
     p "{b}Diphipiel xitia, zirius, fozenien, omayuque, fruno, gyabepien...{/b}"
     p "{b}Menonriaut Coain praegebe, olle, pienteodi, saeeumquod...{/b}"
     p "{b}Xefri bruma, myuwe gyuwe tyuwe pyuwe... {w}nuncisu crucide!{/b}"
-    "I put all my effort and mana while reading the incantation."
-    "In fact, I've never given anything this much effort."
+    "I put all my effort and mana while reading the incantation whilst holding back the cringe."
     p "..."
     m "..."
+    #hide mana
+    "The mana I've gathered has dispersed..."
+    "Did the spell work?"
     p "..."
     m "..."
     p "(This awkward silence again...)"
     p "(I can't stand it...)"
-    p "Uh... did it work?"
+    p "Uh... Misty..."
+    p "Did it work? I mean the spell..."
 
     #scene kek biasa, buka mata
 
     m "It...{w}it didn't..."
-    m "But why?!"
+    m "But why?!" with vpunch
     m "Your incantations are perfect!"
     m "I hate to say it, but your incantation technique was even better than mine!"
     m "It doesn't make any sense if it didn't work!"
@@ -1307,21 +1483,26 @@ label b_001:
     m "If your body is not strong enough, it won't activate."
     m "Basically, you need to be stronger both physically and mentally to cast this spell."
     p "I see... I'm sorry..."
+    "Funny, now I'm the one feeling guilty."
     m "Nah, you don't need to be sorry, it's kinda my fault anyway..."
     m "With my powers gone, I guess I'm stuck here inside your subconscious."
     m "But hey, that means you can seek me anytime."
-    m "And of course I can train you to become stronger to finally return my powers one day."
-    m "But I'm also okay if you decide to forget about me-"
+    m "And, I guess my powers are yours for the time being."
+    m "Of course, I can teach you how to use it too..."
+    m "But we gotta start from the basics!"
+    m "Then you'll get better can finally return my powers some day!"
+    m "Though..."
+    m "I'm also okay if you decide to forget about me-"
     p "What are you talking about?"
     p "Where will I hide my face if I left a powerless girl to her misery?"
     p "I'll be the laughing stock of the whole multiple worlds combined!"
     m "Wha..."
     p "Misty, from today onwards I'll be in your care!"
-    p "Please guide me on using these powers."
-    p "Should I call you Mentor instead?"
+    p "Please teach me on using this power."
+    p "Er, should I call you Mentor now?"
     m "Pfft, Mentor sounds sooo old!"
     m "I'm no old fogey, so just call me Misty like usual!"
-    p "Okay then..."
+    p "Okay!"
 
     #show double flash
 
@@ -1329,12 +1510,14 @@ label b_001:
     p "What's... that?"
     m "Oh, right!"
     m "You were sleeping in the hospital and I pulled your conciousness here."
-    m "This means you must be waking up soon!"
+    m "These flashes means you must be waking up soon!"
     m "We got no time!"
     m "Here, this is your first lesson!"
     m "You can actually enter your subconcious even while you're awake!"
     m "Just close your eyes, focus, and look deep inside your heart!"
     m "When you see a light, approach it and you'll be back here in no time!"
+    m "Remember that!"
+    p "O-okay"
     #show double flash
     m "Looks like you're waking up for real!"
     m "Come back here soon!"
@@ -1344,9 +1527,5 @@ label b_001:
     m "See ya!"
 
     #Scene white CHECKPOOINT 1
-
-
-
-
 
     return
