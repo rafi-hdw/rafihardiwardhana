@@ -137,7 +137,7 @@ label start:
     p "She didn't even let me finish..."
     p "What's her problem?"
     p "Can't she cut me some slack?"
-    p "I lived here for 2 years!"
+    p "I lived here for 3 years!"
     p "One could say I'm a loyal customer!"
     p "Does that mean nothing to her?"
     p "I helped out around the building, did some chores too."
@@ -177,12 +177,13 @@ label start:
 
     #CG baring di rumah sakit?
 
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}2 years...{/outlinecolor}{/size}{/cps}"
-    centered "{cps=10}{size=+25}{outlinecolor=#000000}I've been laying here... for the past 2 years...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}3 years...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}I've been laying here... for the past 3 years...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Unable to laugh...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Unable to make a sound...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Heck...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}I can't even cry even if I wanted to...{/outlinecolor}{/size}{/cps}"
+    centered "{cps=10}{size=+25}{outlinecolor=#000000}It all started at that accident at my Junior High graduation.{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}Maybe...{/outlinecolor}{/size}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}I'm destined to live the rest of my life here...{/outlinecolor}{/size}{/cps}"
     centered "{cps=10}{size=+25}{outlinecolor=#000000}...{/outlinecolor}{/size}{/cps}"
@@ -283,10 +284,11 @@ label start:
     "She puffed out her chest again! This time, double the effort!"
     "As if her breast isn't puffed out enough!"
     unk "Just look at my boobs!" with vpunch
-    unk "Someone said that my boobs can be pretty soothing when you look at it!"
+    unk "My master said that my boobs can be pretty soothing when you look at it!"
     "Soothing?"
     "Those things aren't soothing at all"
-    "They're turning me on!"
+    "They're AROUSING!"
+    "Also, what kind of teacher did you learn from?!"
     unk "What do you think?"
     unk "They're awesome, aren't they?"
     p "W-what is?"
@@ -336,17 +338,23 @@ label start:
     #scene eden with dis10
     #show mc muncul dari bawah
     #show deity muncul dari bawah, naked
-    #show mc ngadep depan
+    #show mc ngadep  bawah
     p "!" with vpunch
+    p "This outfit?!"
+    p "How can this be?!"
+    p "It's exactly like how I imagined it!"
+    p "My ideal outfit!"
+    unk "You like it?"
+    #show mc ngadep depan
     #show muka mc matanya entah kemana, yg jelas ga ngadep depan, malu2
     p "..."
     p "Clothes..."
     unk "...?"
-    p "Clothes, on."
-    p "Now."
+    p "Clothes, put on your clothes..."
     unk "*Sigh*"
     unk "Go close your eyes..."
     unk "Because this might be a bit too much for your eyes."
+
     scene black
     p "Okay..."
     unk "Ancient cloth of the Mystics..."
@@ -431,6 +439,7 @@ label start:
     p "You also said you're a deity, right?!"
     p "What's a deity?!"
     p "And why are they wearing half-topless dress like this?!"
+    p "I'm also wearing my ideal outfit that I've always imagined!"
     p "Also, why the hell can I move my body and also talk?!" with vpunch
     p "This doesn't make sense at all!"
 
@@ -454,6 +463,11 @@ label start:
     "If I'm really dead, and this is the afterlife..."
     "Then it all finally make sense."
     p "Haha, guess I went through a painless death."
+    unk "About your clothes, I kinda peeked inside your mind for a bit."
+    unk "It appeared frequently, so you must be fond of it."
+    unk "So I put it on you, you like it?"
+    p "Yeah, I do!"
+    p "It's awesome!"
     p "..."
     "I think I'm forgetting something important..."
     "Ah, yes, that's right..."
@@ -958,13 +972,13 @@ label b_001:
     scene black with dis20
 
     #scene black
-    centered "{size=+25}{outlinecolor=#000000}A few days later...{/outlinecolor}{/size}"
+    centered "{size=+25}{outlinecolor=#000000}2 weeks later...{/outlinecolor}{/size}"
 
     scene white with Dissolve (3.0)
     #scene eden with Dissolve (2.0)
-    p "Guh..."
+    p "..."
     p "Huh?"
-    p "This place..."
+    p "Isn't this place..."
     p "If this place is what I think it is..."
     p "Where's tha-"
     p "!!!" with vpunch
@@ -1053,16 +1067,16 @@ label b_001:
     m "Ding ding ding!"
     m "Looks like I underestimated you for a bit!"
     m "Turns out, you're quite the thinker."
-    m "I used my powers to soften your impact."
+    m "I used my power to soften your impact."
     m "But you still broke a few bones though."
-    m "Don't worry, I used my powers to make your healing process faster."
-    m "After the fall, you slowly drifted to a nearby beach."
-
+    m "Don't worry, I also boosted your healing process."
+    m "You'll recover much more quickly than other humans."
+    m "Oh right, after the fall, you slowly drifted to a nearby beach."
     p "A beach?"
     p "Am I on the beach right now?"
     m "Well... {w}you were..."
     m "But the people on the beach rushed you to a hospital quickly."
-    m "And it's been a few days since then."
+    m "And it's been a week since then."
     p "Urgh, back to the hospital, again?"
     p "Sigh..."
     p "{i}Feelsbadman{/i}..."
@@ -1110,6 +1124,8 @@ label b_001:
     m "(Phew...)"
     m "(I don't want him to know that I was impressed by SOMETHING of his.)"
     m "(After all, we Deities also have sexual needs.)"
+    m "(Even though I've been acting super confident...)"
+    m "(... I can't let him now I'm a virgin.)"
     p "Then... if you already healed me, and all..."
     p "Why are you here?"
     p "And... where is this anyway?"
@@ -1224,13 +1240,14 @@ label b_001:
     m "No way!"
     m "Absolutely no way!"
     m "And it's not even possible."
-    m "We Deities have powers, but our powers can't be used to create another power!"
-    p "So... {w}you can't create powers..."
-    p "How about giving your powers to me?"
+    m "We Deities have power, but our power can't be used to create another power!"
+    p "So... {w}your power can't create power..."
+    p "Hmmm..."
+    p "How about giving your power to me?"
     m "It is possible, to give my pow-"
     m "Wait!"
     m "No!"
-    m "Tell me one good damn reason on why should I give my powers to you?!" with vpunch
+    m "Tell me one good damn reason on why should I give my power to you?!" with vpunch
     p "Hm..."
     p "A reason?"
     p "How about this..."
@@ -1239,6 +1256,7 @@ label b_001:
     p "Then it's just a matter of time before I can't take it anymore and kill myself."
     p "After I die, I'll probably meet with another deity instead of you."
     p "We'll probably have a chat like we did before, and..."
+
     #muka licik
     p "Surely they will listen when I tell them a story about someone named Misty?"
     p "FYI, my english teacher told me I'm really good at dramatizing things!"
@@ -1292,7 +1310,7 @@ label b_001:
     p "No one knows on what will happen if you used another imperfect spell."
     m "Yeah yeah, I get you."
     m "This one's a perfect spell."
-    m "It's the same spell that was used when I got my powers."
+    m "It's the same spell that was used when I got my power."
     p "Phew..."
     m "You know the drill... close your eyes."
     m "It can be pretty blinding, as usual."
@@ -1331,9 +1349,9 @@ label b_001:
     p "M-Misty?!" with vpunch
     p "What happened?!"
     m "My..."
-    m "My powers..."
-    p "Your powers?"
-    p "What's wrong with your powers?"
+    m "My power..."
+    p "Your power?"
+    p "What's wrong with your power?"
     m "They're..."
     #muka panic
     m "THEY'RE GONE!" with vpunch
@@ -1346,15 +1364,15 @@ label b_001:
     m "GIVE IT BACK TO ME!"
     p "H-hey! Calm down!"
     m "GIVE IT BACK!"
-    m "GIVE MY POWERS BACK!"
+    m "GIVE ME BACK MY POWER!"
     p "H-huh?!"
     m "YOU'RE THE REASON THIS HAPPENED!"
-    m "YOU TRICKED ME INTO GIVING YOU SOME OF MY POWERS!"
+    m "YOU TRICKED ME INTO GIVING YOU SOME OF MY POWER!"
     m "I MESSED UP THE INCANTATION AND TRANSFERRED IT ALL!"
     m "NOW I'M JUST A WORTHLESS POWERLESS DEITY!"
     "Ah... that's why..."
     "She messed up, again..."
-    "This time she transferred all of her powers to me."
+    "This time she transferred all of her power to me."
     "No wonder the surge felt so incredible."
     m "HUAAAAAAAAAAAAAAA!!!"
     m "A HUMAN TRICKED ME!"
@@ -1373,14 +1391,14 @@ label b_001:
     p "Look, that wasn't my fault..."
     p "That wasn't a plan or anything that was completely you for messing up."
     p "I'm not a heartless guy who takes advantage of others."
-    p "Teach me the incantation, I'll return your powers to you."
+    p "Teach me the incantation, I'll return it back to you."
     m "R-really?"
     p "Yeah, a man never goes back on his words!"
     m "O-okay..."
     "I mean... what can I do?"
     "Sure, I like to get back at others, but like I said..."
     "I'm not a heartless person, I also feel empathy for others."
-    "Losing her powers must felt like losing your home."
+    "Losing her power must felt like losing your home."
 
     #scene black
     centered "{size=+25}{outlinecolor=#000000}A few incantation lectures later...{/outlinecolor}{/size}"
@@ -1485,14 +1503,14 @@ label b_001:
     p "I see... I'm sorry..."
     "Funny, now I'm the one feeling guilty."
     m "Nah, you don't need to be sorry, it's kinda my fault anyway..."
-    m "With my powers gone, I guess I'm stuck here inside your subconscious."
+    m "With my power gone, I guess I'm stuck here inside your subconscious."
     m "But hey, that means you can seek me anytime."
-    m "And, I guess my powers are yours for the time being."
+    m "And, I guess my power are yours for the time being."
     m "Of course, I can teach you how to use it too..."
     m "But we gotta start from the basics!"
-    m "Then you'll get better can finally return my powers some day!"
+    m "Then you'll get better can finally return my power some day!"
     m "Though..."
-    m "I'm also okay if you decide to forget about me-"
+    m "I'm also okay if you decide to forget about me, I kinda deserved it..."
     p "What are you talking about?"
     p "Where will I hide my face if I left a powerless girl to her misery?"
     p "I'll be the laughing stock of the whole multiple worlds combined!"
@@ -1525,7 +1543,518 @@ label b_001:
     p "Huh?!"
     p "Wait-"
     m "See ya!"
+    scene white with Dissolve (3.0)
 
     #Scene white CHECKPOOINT 1
+    #Scene white CHECKPOOINT 1
+    #Scene white CHECKPOOINT 1
+    #Scene white CHECKPOOINT 1
+    #Scene white CHECKPOOINT 1
+
+    #scene hospital mc lying blur with Dissolve (3.0)
+    #scene hospital mc lying nonblur Dissolve (1.5)
+    #show cynthia pleased
+    unk "Hmm hmm hmm!"
+    unk "La la laaa!"
+
+    #show cynthia happy open
+    unk "I'll get my paycheck today!"
+    unk "Finally, I can get some quality MeTime!"
+    unk "What should I get to celebrate tonight?"
+
+    #show cynthia confused emote
+    unk "..."
+
+    #show cynthia happy idea emote
+    unk "Oh!"
+    unk "I'll get myself some chocolate sundae!"
+    unk "And with some corn flakes!"
+    unk "Or maybe I'll \"use\" him tonight!"
+
+    p "G..."
+    p "Gghhh...."
+
+    #show cynthia surprised
+    "*Gasp*"
+    "The patient..."
+    "The patient's waking up!"
+    "(Awww... fun time's over for me...)"
+    "(Well 2 weeks has passed, so about time he wake up...)"
+    "Nevermind that, I need to get the doctor!"
+    "Doc!"
+    "Doctor Rachel!"
+    "The patient's waking up!"
+    #hide cynthia slide fade
+
+    #show mc eyes open
+    "Ugh..."
+    "(Where am I...?)"
+    "(This...)"
+    "(This is a hospital room...)"
+    "(...)"
+    "(Misty didn't lie...)"
+    "My head feels like it's still ringing, but... considering how high I fell..."
+    "It ain't too bad, honestly. Thanks to Misty, I wasn't heavily injured."
+    "She also said that I had broken some of the bones on the impact."
+    "Weird... {w}I don't feel anything wrong with my body."
+    "Did her power also made me heal much quicker than a normal human being usually does?"
+
+    #show rachel serious slidefade
+    #show cynthia smile slidefade
+    #show mc surprised
+    p "!"
+    r "Cynthia, get the equipments ready."
+    r "The patient has already woken up."
+    r "Let's do a medical check up on him first."
+    cy "Right away, Doc!"
+    #show cynthia muter balik, slidefade
+    #emoji ijo2
+    p "..."
+    p "A-"
+    r "Ssshhh..."
+    r "Don't talk yet."
+    r "Just relax, we'll do a check up first."
+    r "Then, later in a bit, we can talk, does that sound all right?"
+    p "*Nods*"
+
+    #Show rachel ngadep kiri
+    r "Cynthia, did you get the equipments already?"
+    cy "Yep!"
+    cy "Comin'!"
+
+    #show cynthia slidefade
+    cy "Here you go, Doc!"
+    cy "Everything's ready to go!"
+
+    #show rachel serious
+    r "Alright, prep the blood pressure monitor first."
+    r "We need to check the patient's blood pressure."
+    r "Turn it on and wrap it around his left arm."
+    r "After that, start measuring his blood pressure."
+
+    #show cynthia serious
+    cy "On it, Doc!"
+
+    r "Alright..."
+    r "Open your mouth."
+
+    #show mc mouth open
+    p "Aaaa..."
+
+    #show mc mouth open even wider, kek ada alat2 di lebarin gitu aokwaw
+    p "Auithigaifa-"
+    r "Ssshhh!"
+    r "What did I tell you about talking?"
+
+    #show mc emoji tanda seru
+    p "..."
+    p "Sowwwy..."
+    r "..."
+    r "Okay..."
+    r "Everything's seems fine."
+
+    #show mc mulut tutup
+    #show rachel smile"
+    "The doctor brought out a tiny flashlight from her coat pocket."
+    r "Let's examine your eyes..."
+    r "..."
+
+    #show rachel serious
+    "She aimed the flashlight on my eyes, to check something."
+    "I don't know what she's checking but it's a usual thing to do by doctors."
+    r "..."
+
+    #show rachel smile
+    r "Uh-hum..."
+    r "Eyes are alright too..."
+
+    #show rachel ngadep kiri
+    r "Cynthia, what's his blood pressure?"
+
+    #show cynthia focused
+    cy "A sec..."
+    cy "Still measuring..."
+    cy "110/70..."
+    cy "...115/75..."
+    cy "120/80..."
+    cy "And... {w}it stopped!"
+    cy "Blood pressure is at 120/80!"
+    r "Wow..."
+    r "120/80 is considered to be the perfect blood pressure."
+    r "I've never seen anyone that is at 120/80."
+    "Looks like this power is more than just a faster healing."
+    "Did it also gave me a perfect healthy body?"
+    "Will I be a superhuman later on?!"
+    "It kinda baffled me thinking about it, but can't say I'm also excited!"
+    vfo "Cynthia!"
+    vfo "Are you inside?"
+    vfo "Can you help me out for a bit?"
+    cy "Oh!"
+    cy "Sure!"
+    cy "On my way!"
+    r "Cynthia, try not to be so loud in a patient's room..."
+    cy "Oh, right!"
+    cy "Sorry! Hehehe..."
+    cy "Gotta go Doc, see you in a bit!"
+    r "Yeah yeah..."
+    #hide cynthia slidefade
+
+    #show rachel smile
+    r "Ehem..."
+    r "So..."
+    r "How are you feeling?"
+    r "Statistically, you're fine..."
+    r "But, do you have any complaints?"
+    r "Back pain, neck pain, or anything?"
+
+    #show emoji thinking
+    p "No..."
+    p "Not really Doc..."
+    p "Though I do feel a bit sore..."
+    p "But that's probably because I was asleep for a week?"
+    p "My body didn't move at all, so feeling stiff is normal I guess."
+
+    #show emoji thinking on rachel...
+    r "Yes..."
+    r "You're probably right."
+    r "But, how'd you know that?"
+    p "Know what...?"
+    r "You, being asleep for a week..."
+    r "How'd you know that?"
+
+    #show emoji garis ungu
+    p "Uh..."
+    "It was Misty, Misty told me."
+    "I can't just say \"A deity told me and I believe her.\" can I?"
+    p "Err..."
+    p "A dream!"
+    p "Yes, that's it!"
+    p "I just dreamt about it!"
+    p "Didn't think it's actually true..."
+    p "Ha ha... ha..."
+    p "..."
+    p "(Kill me...)"
+    r "(He's clearly lying...)"
+    r "(What a weird guy...)"
+    r "Well, that doesn't matter much..."
+    r "I guess you're totally fine then."
+    r "Just to be safe, go get some more rest."
+    r "If all goes well, I think you can go home tomorrow."
+    p "Oh... okay."
+
+    #show rachel ngadep kiri jalan
+    #show rachel ngadep kanan lagi
+    r "Oh by the way, I'm Dr. Rachel."
+    r "But I guess you already know that."
+    r "Well..."
+    r "I have to go see the other patients now."
+    r "See you later, I guess."
+    p "Thanks, Doc!"
+    r "You're welcome."
+
+    #show rachel ngadep kiri lagi, slide fade...
+    p "..."
+    "Doctor Rachel finally left me alone in the room."
+    p "*Sigh*"
+    p "(What will I do now...)"
+    p "..."
+
+    #show emoji idea
+    p "(Oh right!)"
+    p "(The first lesson!)"
+
+    #scene white
+    #terus flashback in scene yg sama kek sblmnya, tp hitam putih
+    m "Here, this is your first lesson!"
+    m "You can actually enter your subconcious even while you're awake!"
+    m "Just close your eyes, focus, and look deep inside your heart!"
+    m "When you see a light, approach it and you'll be back here in no time!"
+    m "Remember that!"
+
+    #scene white
+    #balik ke scene semula
+    p "(Close my eyes{w}, focus{w}, and look deep inside my heart, huh...)"
+
+    #show mc closed eyes
+    p "(Concentrate concentrate)..."
+
+    #show misty with glow, dsb
+    m "Feeling better?"
+    p "Yeah..."
+    p "(Wait...)"
+    p "(Is that...)"
+
+    #show mc eyes open
+    #show emoji kaget
+    p "MISTY?!" with vpunch
+    m "Yes, of course!"
+    m "Who else is as beautiful is me?"
+
+    #show emoji air
+    p "(Ugh...)"
+    p "(That narcissistic personality...)"
+    p "(That's Misty alright...)"
+    p "Just now, I was trying to go inside my subconcious mind to meet you."
+    p "How come you're out here?"
+    p "Didn't you say that you don't have any powers left?"
+    m "Well, you see..."
+    m "Right after you left..."
+
+    #show emoji musik
+    m "A bit of my power came back to me!"
+    m "I don't know why that happened."
+    m "It's logically impossible for that to happen."
+    m "You're a weird one after all..."
+    "Oooh, here comes, the line I've been waiting for..."
+    m "Maybe there's something special about you."
+    "Called it!"
+    m "..."
+    m "So, how does it feel to be the chosen one?"
+    p "How does it feel? {w}Great!"
+
+    #Show rachel surprised slide fade with sfx
+    r "What's wrong?!"
+    r "I heard you shouted..."
+    r "Are you in pain?"
+
+    #show mc surprised emoji too
+    p "(Oh shit!)" with vpunch
+    "How do I explain a MISTY to her?"
+    "No, even worse!"
+    "How do I explain a half naked girl doing here in my room?!" with vpunch
+    r "Also, I heard you mumbling right after..."
+    r "It kinda sounded like you were talking."
+    r "Were you talking to someone?"
+    p "(\"Were you talking to someone?\")"
+    p "(Wait...)"
+    p "(Does this mean she can't see Misty?!)"
+    p "Uh..."
+    p "I was just practicing my vocals..."
+    p "Felt a bit stiff on my throat."
+    p "I think what you just heard was my crappy mumbling."
+    r "(He lied again...)"
+    r "(It wasn't a mumble, he was talking!)"
+    r "(I'm really sure of it!)"
+
+    #show rachel ngadep kiri
+    #show rachel ngadep kanan
+    #show emoji mikir
+    r "(Hm...)"
+    r "(No one seems to have entered from the window / door either...)"
+    r "Oh, I see."
+    r "Okay then..."
+
+    #show rachel ngadep kiri, slidefade
+    p "Phew..."
+    p "Why didn't you tell me that nobody else can see you?!"
+    p "I was scared shitless just now!"
+    p "How am I supposed to explain what a hot girl is doing in my room?"
+
+    #show misty blush
+    m "Aw..."
+    m "Y-you think I'm hot?"
+    p "Where did your over-confident ego went to?"
+    m "Eh, it's still here, just want to tease you for a bit."
+    p "No offense but your acting is kinda bad..."
+    p "I can see it coming from miles away."
+
+    #show misty disappointed
+    m "Tch."
+    p "So, what are you doing out here?"
+    m "What? You think your subconcious mind isn't boring?"
+    p "Uh, maybe?"
+    m "It's boring, like seriously boring."
+    m "So I decided to go out, and see the world."
+    m "Previously my duty was to only send off the dead."
+    m "I stayed in that place pretty much all the time."
+    m "Never got the chance to actually observe humans and how they live."
+    m "And talk about a big coincidence!"
+    m "This might be the best chance to observe them!"
+    m "So I'm sticking around, like it or not!"
+    "Ugh, so now I have to go everywhere with her?"
+    "Even when I want to take a shit?"
+    m "and I can't stay too far from you, maybe 20m max!"
+    m "I tried going over 20m, it just teleports me back to you."
+    p "Pfft, hahaha!"
+    p "So basically..."
+    p "You're like a dog tied to a leash, and I'm holding that leash?"
+
+    #show misty angry
+    #show emoji marah
+    m "Say that again, I dare you!"
+    p "Sorry sorry! I was just joking!"
+    "Sorry Misty, but that was too funny to hold back!"
+    p "Anyways, I probably should lower my voice when talking with you."
+    p "I don't want to be called crazy or a lunatic..."
+
+    #show misty smug
+    m "Tck-Tck."
+    m "No need for that..."
+    m "We can use telepathy!"
+    m "(Like this!)"
+
+    #show mc surprised
+    #show emoji surprised
+    p "(Whoa!)"
+    p "(I can hear you!)"
+    p "(How do I do it?)"
+    p "(...)"
+    p "(Oh...)"
+    m "(See, you're a quick learner!)"
+    p "(I don't understand it a bit, but...)"
+    p "(As long as it works fine I guess.)"
+    m "(Yep, as long as it works.)"
+    m "But, let’s just talk like this {b}ONLY{/b} when there are other people around."
+    m "It feels weird when I can hear you talking but your mouth isn't moving."
+    p "Hah! Funny..."
+    p "I had the same thing in mind."
+    m "So..."
+    m "The Doctor said you're good to go tomorrow, right?"
+    p "Yeah, she did."
+    p "I bet she thinks I'm weird or something..."
+    p "She overheard us talking, remember?"
+    m "Probably..."
+
+    #show misty smug
+    m "Speaking of the doctor..."
+    m "She's kinda busty, don't you think?"
+    p "Yeah."
+
+    #Show mc surprised
+    p "Wait, what did you say?"
+
+    #Show misty laugh
+    m "Hahaha..."
+    m "\"Yeah.\""
+    m "Hahahaha!" with vpunch
+
+    #Show emoji air mata
+    p "Yeah yeah..."
+    p "Go ahead, keep teasing me."
+    p "I can wait all day..."
+    m "I can't help it, I'm so sorry!"
+    m "I guess everyone can be absent-minded too sometimes!"
+    m "Gahahaha!!!" with vpunch
+
+    scene black
+
+    "And thus, Misty kept laughing for 15 minutes straight."
+    "I was so annoyed to the point of covering my ears."
+    "She noticed and kept laughing, this time through telepathy."
+    "Dipshit is basically asking for a fight."
+    "Just you watch, Misty."
+
+    #scene balik kek tadi
+    m "Pfff-hahaha!" with vpunch
+    m "Ha...ha..ha..."
+    m "Haaa..."
+    m "O-okay... I think I had enough..."
+    "No shit, it's me who had enough!"
+    "I had to withstand 15 minutes of ear torture!"
+    "That was a really lame and unfunny joke too, do Deities have bad sense of humor?"
+    "I don't want to meet the rest of them..."
+    "One is already more than enough for a lifetime."
+    m "Aah..."
+    m "Laughing is my favourite emotion out of all..."
+    m "It just feels so nice."
+    m "Anyways, since you're getting discharged..."
+    m "How about we hit the town tomorrow?"
+    p "Sure, this is a foreign place for me too."
+    p "It'll be nice to get a lay of the land."
+    p "I wonder how's the price for rent here..."
+    m "Rent?"
+    m "What's rent?"
+    p "Well, you understand how money works right?"
+    p "Basically you have to pay with money to have a place to live."
+
+    #show mc confused
+    p "Wait a minute..."
+    p "Money...? {w}rent...? {w}bills...?"
+    p "..."
+
+    #show mc despair funny
+    p "Oh...{w} shit."
+    m "What?"
+    m "Why are you saying \"shit\" out of a sudden?"
+    p "The hospital..."
+    p "... {w}Bills..."
+    p "Hospital have bills!" with vpunch
+    m "And?"
+    m "Like you said, you just gotta pay right?"
+
+    #show mc angry
+    p "\"You just gotta pay?\"?!"
+    p "Do you see any money on me?!" with vpunch
+
+    #show misty angry
+    m "Well if it was so important..."
+    m "Why didn't you ask me before going through the portal?"
+    p "Well, who would've thought that the first thing I had to pay for are hospital bills?!"
+
+    #show misty bersalah
+    m "Hehe..."
+    m "Right..."
+    "Think [p], think!"
+
+    #show emoji mikir
+    "Ideas, ideas, gotta think of some ideas!"
+
+    #show emoji dapet ide
+    p "Right!"
+    p "Can you conjure money, or make them or something?"
+    m "No, of course not!"
+    m "Even though a bit of my power returned, it ain't enough to do anything!"
+    m "I'm barely an existence in this world, only you can see me."
+    m "My power is in you, but conjuration spell is considered high-level."
+    m "With your current self, just scratch that out from your ideas."
+    "Misty's right, with that weird body condition rule..."
+    "Doing spells right now is not an option..."
+
+    #show emoji mikir
+    p "Hmmm..."
+    p "..."
+
+    #show emoji ga dapet ide, asep gitu
+    p "Ah..."
+    p "I give up..."
+    "Even though I'm almost recovered, thinking very hard like this kinda made me feel nauseous."
+
+    #show misty surprised
+    m "If you're giving up, who's going to pay the bills tomorrow?"
+    p "I don't know..."
+    p "..."
+    p "Meh."
+    p "Doctor Rachel said I should just take it easy, relax, and rest!"
+    p "No point in worrying about it right now."
+    p "There's a saying: \"Worrying about tomorrow only takes today’s peace away!\""
+    p "I agree with that, wholeheartedly!"
+    p "Let's just think about it tomorrow."
+    p "Tomorrow's problems are tomorrow's problems."
+
+    #show emoji misty, air netes
+    m "One way you're kinda dependable, but you're also really helpless..."
+    p "Touche, Misty..."
+    p "Touche..."
+
+    #scene black
+    "I decided to end the day early and get more rest as the doctor told me to."
+    "I also want to recover as soon as possible, because..."
+    "To be honest… I’m actually excited and can’t wait to see the town as well."
 
     return
+
+# jadi kita mau bikin opsi 3rd person
+# Ability mc mata bisa kaya drone
+# merayap di Ventilasi
+# akhirnya ketemu sintia di kamar mandi lagi Cokil gitu
+# cintia ngga tau dia ngga di pergokin
+# PervyChoco — Today at 3:28 PM
+# dia di pantai, dia dibawa kerumah sakit
+# selama di rumah sakit koma 2 minggu
+# cynthia ngelakuin thing nya itu di dalam 2 minggu itu kan
+# baru lah dia ngobrol ama si misty, dsb
+# pura2 polos tp pas dah keluar panik jga
+
+    # INI BAGIAN CYNTHIA
+    # scene masturbate, nyebut nama mc
+    # abis itu,
